@@ -39,7 +39,7 @@ g = Acceleration due to gravity.
 
 assuming the overall plant efficiency to be around 60-70 percent
 
-The tesla model s P 85 uses a three phase AC four pole induction Motor.
+##### The tesla model s P 85 uses a three phase AC four pole induction Motor.
 
 for simplicity a Brushed Dc motor is used.
 
@@ -58,18 +58,30 @@ R = resistance,
 L = inductance
 E = EMf
 
-The torque in a DC motor can be written as,
+##### The torque in a DC motor can be written as,
 #### T(t) = Kt*I(t)
-where, Kt is the motor torque constant and I is the current.             
+where, Kt is the motor torque constant and I is the current. 
 
-similarly, the Back EMF can be written as,
+##### similarly, the Back EMF can be written as,
 #### E(t) = Ke*w(t)
 where, Ke is the Back EMF constant and w is the rotaional speed of the motor in (rad/s).
 
-by combining the above equations and transforming into laplace domain, we get.
+##### by combining the above equations and transforming into laplace domain, we get.
+
+###### Torque as a function of voltage and rotational velocity
 
 ![dcmotormain equation](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/7d446ede-095a-4491-9c19-d68459a330a8)
 
 ## Simulink Model Implementation
 
 ![Screenshot (479)](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/9fb74311-8550-45e3-979a-c6069cc7af2a)
+
+#### Results
+
+![velocity](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/07c70212-9fac-4ae3-b1e0-1e76274c8a79)
+
+![acceleration](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/428ac190-8ce3-44f0-b51e-48c64348f1bc)
+
+ ![torque](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/de35b434-c5d0-4d0b-8764-a09ac15e00a9)
+
+![TsvNv](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/d239f9e4-6bf8-4da1-be97-25414b5b0481)
