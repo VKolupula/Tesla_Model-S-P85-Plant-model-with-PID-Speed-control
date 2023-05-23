@@ -84,4 +84,3 @@ where, Ke is the Back EMF constant and w is the rotaional speed of the motor in 
 
  ![torque](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/de35b434-c5d0-4d0b-8764-a09ac15e00a9)
 
-![TsvNv](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/d239f9e4-6bf8-4da1-be97-25414b5b0481)
