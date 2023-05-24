@@ -88,4 +88,5 @@ where, Ke is the Back EMF constant and w is the rotaional speed of the motor in 
 
 ![TsvNv](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/709acf82-cb4b-4981-adee-50b40ef95e63)
 
-
+source: Model a Car and Design a PID Controller in MATLAB/SIMULINK
+by Eliott Wertheimer
