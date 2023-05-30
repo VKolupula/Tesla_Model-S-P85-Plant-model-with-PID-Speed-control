@@ -1,9 +1,10 @@
 # Model and simulate an electric car (Tesla Model S) in MATLAB & SIMULINK with PID speed controller.
 
 ### vehicle parameters
-![Screenshot (480)](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/8fe02d07-f236-48c0-be93-1d56b5f2ccba)
 
-![car_dynamics](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/b465784f-447e-443a-9794-fe0d53eac7e7)
+![Screenshot (480)](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/652d6fdf-ad83-40ae-8631-b8d2ebbed8a4)
+
+![car_dynamics](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/07a4e91b-7536-4372-8da6-23b0609ca93d)
 
 ## Newton's laws of motion 
 ### Σ F = Ma.
@@ -11,7 +12,8 @@
 
 ##### Tractive Force(Ff)
 
-![tractive force](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/31c04632-a3f3-47b5-bdea-4ec13bf8a5f8)
+![tractive force](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/afb39d04-280b-44cf-b2ec-47573a77c1d2)
+
 
 where,
 T = torque(Nm),
@@ -20,7 +22,7 @@ Gr = Gear ratio.
 
 ##### Aerodynamic Drag(D)
 
-![areodynamic drag](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/ba92b89e-0813-4993-860a-4c76cf8cca79)
+![areodynamic drag](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/8790004a-712d-47c6-9428-614a38ba68a1)
 
 where,
 ρ = roh air density(Kg/m^3),
@@ -30,7 +32,7 @@ Cd = Coefficient of Drag.
 
 ##### Rolling Resistance(Fr)
 
-![rolling resistance](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/10082851-31d1-464c-be4b-37d09c8588cb)
+![rolling resistance](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/df68e433-9fe5-41db-b5d5-37e7afe1cf00)
 
 where,
 Cr = rolling resistance Coeffcient,
@@ -45,11 +47,11 @@ for simplicity a Brushed Dc motor is used.
 
 #### Brushed DC Motor
 
-![brushed dc motor](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/512c0ac8-33e2-4e71-9d08-9907473b3e62)
+![brushed dc motor](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/b0d55cc2-f482-4647-aa1f-c2880bcc1200)
 
 according to Kirchhoff's the sum of all Voltages across a closed path in a circut equals zero.
 
-![Kirchhoff's law](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/1ea1ca0c-ef26-4511-a8cc-81e40fdd581e)
+![Kirchhoff's law](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/6dfa4735-5a60-4fea-a589-148b18983673)
 
 where, 
 v = voltage,
@@ -70,13 +72,21 @@ where, Ke is the Back EMF constant and w is the rotaional speed of the motor in 
 
 ###### Torque as a function of voltage and rotational velocity
 
-![dcmotormain equation](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/7d446ede-095a-4491-9c19-d68459a330a8)
+![dcmotormain equation](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/1bc2cfd9-c2a5-49d3-8b68-1bb1a97e687b)
 
 ## Simulink Model Implementation
 
-![Screenshot (479)](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/9fb74311-8550-45e3-979a-c6069cc7af2a)
+![Screenshot (479)](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/d5a4f248-7ac6-4e26-b573-3409f4de5860)
 
 #### Results
 
+![velocity](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/7f5d8aad-ef01-4424-b647-e2dda652aef5)
 
+![torque](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/3309cd90-2fd8-4d82-90ee-b30005b3c911)
 
+![acceleration](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/7d002bc5-262b-44cc-a243-a1e5903acdc5)
+
+![TsvNv](https://github.com/VKolupula/Tesla_Model-S-P85-Plant-model-with-PID-Speed-control/assets/120835150/709acf82-cb4b-4981-adee-50b40ef95e63)
+
+source: Model a Car and Design a PID Controller in MATLAB/SIMULINK
+by Eliott Wertheimer
